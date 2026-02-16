@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Ai-resume-Analyzer/static/css/main.692bc537.css",
+    "main.js": "/Ai-resume-Analyzer/static/js/main.98d8f549.js",
+    "static/js/453.20359781.chunk.js": "/Ai-resume-Analyzer/static/js/453.20359781.chunk.js",
+    "static/media/image.png": "/Ai-resume-Analyzer/static/media/image.415cfa5ca32037fab8ef.png",
+    "index.html": "/Ai-resume-Analyzer/index.html",
+    "main.692bc537.css.map": "/Ai-resume-Analyzer/static/css/main.692bc537.css.map",
+    "main.98d8f549.js.map": "/Ai-resume-Analyzer/static/js/main.98d8f549.js.map",
+    "453.20359781.chunk.js.map": "/Ai-resume-Analyzer/static/js/453.20359781.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.692bc537.css",
+    "static/js/main.98d8f549.js"
+  ]
+}
