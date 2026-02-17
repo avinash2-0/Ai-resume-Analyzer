@@ -1,26 +1,92 @@
-An intelligent web application that analyzes resumes against job descriptions and calculates a match score using skill extraction and keyword analysis.
+# 🚀 AI Career Intelligence Platform
 
-This tool helps job seekers:
+An AI-powered full-stack web application that analyzes resumes against job descriptions and provides intelligent job recommendations using semantic similarity and skill-based matching.
 
-📊 Measure resume-job match percentage
+---
 
-🧠 Identify matching and missing skills
+## 🔍 Overview
 
-🎯 Improve resume alignment with job requirements
+AI Career Intelligence Platform helps candidates understand:
 
-🛠 Tech Stack
-💻 Frontend
+- How well their resume matches a job description
+- Which skills are missing
+- What jobs best match their profile
+- Real-time job opportunities (India-based)
 
-React.js
+This system combines NLP, machine learning, and live job APIs to create an intelligent career assistant.
 
-JavaScript (ES6+)
+---
 
-CSS
+## ✨ Key Features
 
-⚙ Backend
+- 📄 Upload Resume (PDF)
+- 🧠 Semantic Similarity Matching (Sentence Transformers)
+- 🛠 Automatic Skill Extraction
+- 📊 Final Match Score (Semantic + Skill Weighted)
+- ❌ Missing Skill Detection
+- 🌍 Live Job Search (RapidAPI - JSearch)
+- 🇮🇳 India Job Filtering
+- 🏆 Resume-Based Job Ranking (Top 10)
 
-FastAPI
+---
 
-Python
+## 🧠 How It Works
 
-NLP-based text processing
+1. Resume is uploaded (PDF format)
+2. Resume text is extracted using PDF parsing
+3. Skills are detected from a predefined skills database
+4. Job description is analyzed
+5. Semantic similarity is computed using MiniLM model
+6. Final match score is generated
+7. Live jobs are fetched
+8. Jobs are ranked based on resume skill match
+
+---
+
+## 🛠 Tech Stack
+
+### Backend
+- FastAPI
+- Python
+- Sentence Transformers (all-MiniLM-L6-v2)
+- PDFPlumber
+- RapidAPI (JSearch API)
+- Requests
+- Python-dotenv
+
+### Frontend
+- React.js
+- Custom CSS (Glass UI)
+- Fetch API
+
+---
+
+## 🏗 System Architecture
+
+Frontend (React)  
+⬇  
+FastAPI Backend  
+⬇  
+AI Model (Sentence Transformers)  
+⬇  
+RapidAPI Job Search API  
+
+---
+
+## 📦 Installation Guide
+
+### 🔹 Backend Setup
+
+```bash
+cd backend
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn main:app --reload
+http://127.0.0.1:8000
+
+cd frontend
+npm install
+npm start
+http://localhost:3000
+
